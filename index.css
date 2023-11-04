@@ -1,0 +1,93 @@
+body {
+    background-image: url("https://cdn.midjourney.com/32d246e1-3786-4d18-be18-f6435cafd082/0_3.webp");
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 5px solid aqua;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: inline;
+    background: black;
+    padding: 1.5% 3%;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em aqua;
+}
+
+#count-el {
+    font-size: 3vw;
+    border: 0.5vw solid transparent;
+    border-radius: 0.5vw;
+    padding: 0.5vw 1vw;
+    display: inline-block;
+    animation: neon-border 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-border {
+    from {
+        border-color: aqua;
+        box-shadow: 0 0 0.25vw aqua, 0 0 0.5vw aqua, 0 0 0.75vw aqua;
+    }
+    to {
+        border-color: cyan;
+        box-shadow: 0 0 0.5vw cyan, 0 0 1vw cyan, 0 0 1.5vw cyan;
+    }
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#increment-btn,
+#save-btn {
+    background: transparent;
+    border: 0.2vw solid aqua;
+    padding: 0.5vw 1vw;
+    color: white;
+    font-weight: bold;
+    width: 40%;
+    margin-bottom: 1vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#increment-btn {
+    background: rgba(0, 255, 0, 0.7);
+}
+
+#save-btn {
+    background: rgba(255, 0, 0, 0.7);
+}
+
+button:hover {
+    background: rgba(0, 0, 255, 0.7);
+    border-color: aqua;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
